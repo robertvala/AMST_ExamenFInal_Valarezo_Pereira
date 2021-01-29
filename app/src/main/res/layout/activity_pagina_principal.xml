@@ -10,8 +10,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="354dp"
+        android:layout_height="162dp"
+        android:layout_gravity="center"
         app:srcCompat="@drawable/ask_hero_logo" />
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="APLICACIONES MOVILES Y SISTEMAS TELEMATICOS"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <TextView
         android:id="@+id/textView2"
@@ -57,6 +58,7 @@
         android:id="@+id/btnBuscar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="buscarHeroe"
         android:text="BUSCAR HEROES" />
 
 </LinearLayout>

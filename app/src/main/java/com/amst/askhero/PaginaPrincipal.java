@@ -28,7 +28,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     Button btnBuscar;
     EditText editTextHeroe;
     ArrayList<SuperHeroe> superHeroes= new ArrayList<>();
-    Context context;
+    Context context=this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
