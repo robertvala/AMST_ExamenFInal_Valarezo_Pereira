@@ -6,5 +6,5 @@ import android.os.Bundle;
 
 public class Resultado extends AppCompatActivity {
 
-
+//nnnnnn
 }
