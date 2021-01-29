@@ -11,6 +11,9 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+
+import java.sql.Array;
+
 import java.nio.BufferUnderflowException;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +30,9 @@ Context context=this;
         setContentView(R.layout.activity_resultado);
         listHeroes=(ListView)findViewById(R.id.listHeroes);
         txtResultado=(TextView)findViewById(R.id.txtResultado);
+
         cargarDatos();
+
         ArrayAdapter adaptador= new ArrayAdapter(context, android.R.layout.simple_list_item_1,info);
         listHeroes.setAdapter(adaptador);
 
@@ -36,6 +41,9 @@ Context context=this;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(context,PerfilHeroe.class);
+
+                intent.putExtra("Superheroe",superheroes.get(position));
+
                 Bundle bundle= new Bundle();
                 bundle.putSerializable("Superheroes",superheroes.get(position));
                 intent.putExtras(bundle);
@@ -45,6 +53,7 @@ Context context=this;
         });
 
     }
+
 
     private void cargarDatos(){
         Bundle objetoEnviado= getIntent().getExtras();
