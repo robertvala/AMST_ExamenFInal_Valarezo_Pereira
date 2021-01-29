@@ -6,5 +6,5 @@ import android.os.Bundle;
 
 public class Registros extends AppCompatActivity {
 
-
+//nnnnnn
 }
