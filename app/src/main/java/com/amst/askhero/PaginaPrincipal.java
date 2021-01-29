@@ -39,7 +39,7 @@ public class PaginaPrincipal extends AppCompatActivity {
     }
     public void buscarHeroe(View view) {
 
-        RequestQueue queue= Volley.newRequestQueue(getApplicationContext());
+        RequestQueue queue= Volley.newRequestQueue(getApplicationContext());    
 
         if (editTextHeroe.getText().toString().length()>=3){
             String url="https://www.superheroapi.com/api.php/3738068759615960/search/"+editTextHeroe.getText().toString();
