@@ -86,7 +86,7 @@ public class PaginaPrincipal extends AppCompatActivity {
             queue.add(request);
         }
         else{
-            Toast.makeText(this,"Busca invalida",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Busqueda invalida",Toast.LENGTH_SHORT).show();
             editTextHeroe.setText("");
         }
     }
