@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Registros extends AppCompatActivity {
+public class Resultado extends AppCompatActivity {
 
 
 }
