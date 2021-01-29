@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Resultado extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
-//nnnnnn
+public class Resultado extends AppCompatActivity {
+List<SuperHeroe> superheroes= new ArrayList<>();
 }
