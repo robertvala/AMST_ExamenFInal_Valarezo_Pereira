@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AskHero">
-        <activity android:name=".Registros"></activity>
+        <activity android:name=".PaginaPrincipal"></activity>
+        <activity android:name=".Registros" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
