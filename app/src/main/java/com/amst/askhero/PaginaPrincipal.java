@@ -64,7 +64,7 @@ public class PaginaPrincipal extends AppCompatActivity {
                             superHeroes.add(superHeroe);
                             System.out.println(superHeroe);
                         }
-                        Intent intent=new Intent(context,Resultados.class);
+                        Intent intent=new Intent(context,Resultado.class);
                         Bundle bundle=new Bundle();
                         bundle.putSerializable("Superheroes",superHeroes);
                         intent.putExtras(bundle);
@@ -79,13 +79,13 @@ public class PaginaPrincipal extends AppCompatActivity {
             }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    System.out.println("No entra ni por Dios ni por la patria "+error);
+                    System.out.println("Error"+error);
                 }
             });
             queue.add(request);
         }
         else{
-            Toast.makeText(this,"Se requiere una longitud minima de 3 letras para buscar",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Busca invalida",Toast.LENGTH_SHORT).show();
             editTextHeroe.setText("");
         }
     }
