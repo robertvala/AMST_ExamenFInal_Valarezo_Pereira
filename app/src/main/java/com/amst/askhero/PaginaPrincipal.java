@@ -65,6 +65,7 @@ public class PaginaPrincipal extends AppCompatActivity {
                             System.out.println(superHeroe);
                         }
                         Intent intent=new Intent(context,Resultado.class);
+                        //ssms
                         Bundle bundle=new Bundle();
                         bundle.putSerializable("Superheroes",superHeroes);
                         intent.putExtras(bundle);
